@@ -26,8 +26,9 @@ function smallNums(){
     let smallNums = [];
     // Your answer here:
     for( let i = 0; i < numbers.length; i++ ){
-        if( numbers < 10){
-            smallNums.push;
+        while( numbers[i] < 10 ){
+            smallNums.push(numbers[i]);
+            i++;
         }
     }
     
@@ -75,7 +76,7 @@ function addBoxOffice(){
 */
 function addActor(){
     // Your answer here:
-    film.actors = "Yukiko Shimazaki";
+    film.actors.push( "Yukiko Shimazaki");
     
     return film;
 }
@@ -85,6 +86,9 @@ function addActor(){
 */
 function getLosses(){
     // Your answer here:
+    film.property = film.boxoffice - film.budget;
+    
+    return film.property;
 }
 
 
@@ -104,6 +108,11 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+    for( let i = 0; i < numberVals.length; i++){
+        vals.push( letterVals[ i ] + numberVals[ i ]);
+        
+    }
+        return vals;
 }
 
 
@@ -121,4 +130,10 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for( let i = 0; i < first.length; i++ ){
+        if( first[ i ] === second[ i ] ){
+            same.push( first[ i ]);
+        }
+    }
+    return same;
 }
