@@ -25,6 +25,11 @@ function getFourthNum(){
 function smallNums(){
     let smallNums = [];
     // Your answer here:
+    for( let i = 0; i < numbers.length; i++ ){
+        if( numbers < 10){
+            smallNums.push;
+        }
+    }
     
     return smallNums;
 }
@@ -34,7 +39,7 @@ function smallNums(){
 */
 function addNums(){
     // Your answer here:
-    numbers.push( 12, 99, 101);
+    numbers.push( 12, 99, 101 );
     
     return numbers;
 }
@@ -61,6 +66,7 @@ let film = {
 function addBoxOffice(){
     // Your answer here:
     film.boxoffice = 269061;
+    
     return film;
 }
 
@@ -69,6 +75,9 @@ function addBoxOffice(){
 */
 function addActor(){
     // Your answer here:
+    film.actors = "Yukiko Shimazaki";
+    
+    return film;
 }
 
 /*
